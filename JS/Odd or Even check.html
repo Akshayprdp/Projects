@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function popup()
+        {
+            y = document.getElementById("number")
+            x=parseInt(y.value);
+            
+            if(x%2==0)
+            {
+                document.getElementById("result").innerHTML="even"
+            }
+            else if(x%2!=0)
+            {
+                document.getElementById("result").innerHTML="odd"
+            }
+
+
+        }
+
+    </script>
+</head>
+<body>
+    <input type="number" id="number">
+    <button id="b" onclick="popup()">button</button>
+    <p id="result">***</p>
+    
+</body>
+</html>

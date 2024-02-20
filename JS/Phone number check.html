@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+      function popup(helperMsg)
+      {
+        var y=document.getElementById("a")
+        x=y.value.length
+
+        if(x>=6&&x<=12)
+        {
+            alert("successful")
+        }
+      else
+      {
+        alert(helperMsg)
+      }
+      
+      }
+    </script>
+<center>
+    <label for="">Enter phone number</label><br><br>
+    <input type="number" placeholder="enter 6 to 12 numbers" id="a">
+    <button onclick="popup('error')">click</button>
+</center>
+</body>
+</html>

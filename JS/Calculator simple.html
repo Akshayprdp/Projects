@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function popup1(x,y)
+        {
+            var c = parseInt(x.value)+parseInt(y.value)
+            alert(`sum is${c}`)
+        }
+        function popup2(x,y)
+        {
+          var  c=parseInt(x.value)-parseInt(y.value)
+            alert(`sub is ${c}`)
+        
+        }
+        function popup3(x,y)
+        {
+           var c=parseInt(x.value)*parseInt(y.value)
+            alert('multiplication is :'+c)
+        }
+        function popup4(x,y)
+        {
+          var c=parseInt(x.value)/parseInt(y.value)
+          alert("division is:"+c)
+        }
+
+    </script>
+    <div>
+        <center>
+            <label for="">Enter 2 numbers</label>
+            <input type="text" id="a" placeholder="0"><input type="text" id="b" placeholder="0">
+            <div style="margin-top: 50px;">
+                <button onclick="popup1(document.getElementById('a'),document.getElementById('b'))">addition</button><br><br>
+                <button onclick="popup2(document.getElementById('a'),document.getElementById('b'))">Substraction</button><br><br>
+                <button onclick="popup3(document.getElementById('a'),document.getElementById('b'))">multiplication</button><br><br>
+                <button onclick="popup4(document.getElementById('a'),document.getElementById('b'))">Division</button><br><br>
+            </div>
+        </center>
+       
+    </div>
+    
+    
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function popup(x,y)
+        { 
+            var k=x.value
+            var l=y.value
+            if (k=="admin"&&l=="12345")
+            {alert("successful") }
+
+            else
+            {alert("unsuccessful")}
+        }
+    </script>
+<center>
+    <label for="">User name</label>
+    <input type="text" placeholder="enter user" id="a"><br><br>
+    <label for="">password</label>
+    <input type="password" placeholder="******" id="b"><br><br>
+    <button onclick="popup(document.getElementById('a'),document.getElementById('b'))">login</button>
+</center>
+</body>
+</html>
